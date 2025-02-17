@@ -8,8 +8,9 @@ if (!isset($_POST['name']) || !isset($_POST['email'])) {
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$password = $_POST['password'];
 
-$sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+$sql = "INSERT INTO users (username, email, password) VALUES ('$name', '$email', '$password')";
 $pdo->exec($sql);
 
 echo "User created successfully";
