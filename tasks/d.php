@@ -12,5 +12,5 @@ $sql = "SELECT * FROM $table_name";
 $result = $pdo->query($sql);
 
 foreach ($result as $row) {
-    echo "<p>{$row['id']} - {$row['name']} - {$row['email']}</p>";
+    echo "<p>{$row['id']} - {$row['username']} - {$row['email']}</p>";
 }
