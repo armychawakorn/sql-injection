@@ -23,7 +23,7 @@ echo "<tr><th>ID</th><th>Name</th><th>Email</th></tr>";
 foreach ($users as $user) {
     echo "<tr>";
     echo "<td>" . $user['id'] . "</td>";
-    echo "<td>" . $user['name'] . "</td>";
+    echo "<td>" . $user['username'] . "</td>";
     echo "<td>" . $user['email'] . "</td>";
     echo "</tr>";
 }
